@@ -62,6 +62,7 @@
        (eopl:error quien "Se esperaban al menos ~s argumentos, recibi ~s" n (length args))
        )))
 
+<<<<<<< HEAD
 
 ;; hay-cero? : lista de números -> boolean
 ;; Retorna #t si algún elemento de la lista es igual a cero.
@@ -159,3 +160,15 @@
                
 
 (provide (all-defined-out))
+=======
+
+;; hay-cero? : lista de números -> boolean
+;; Retorna #t si algún elemento de la lista es igual a cero.
+(define hay-cero?
+  (lambda (lista)
+    (cond
+      ((null? lista) #f)
+      ((= (car lista) 0) #t)
+      (else (hay-cero? (cdr lista))))
+    ))
+>>>>>>> origin/valentina
