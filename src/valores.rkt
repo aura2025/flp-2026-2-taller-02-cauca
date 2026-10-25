@@ -28,4 +28,8 @@
    )
   )
 
+<<<<<<< Updated upstream
 (provide (all-defined-out))
+=======
+(provide (all-defined-out))
+>>>>>>> Stashed changes
